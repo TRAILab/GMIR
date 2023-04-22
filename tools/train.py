@@ -304,7 +304,7 @@ def main():
             )
             last_epoch = start_epoch + 1
             
-            if 'REPLAY' in cfg and cfg.REPLAY.method == 'EMIR' and cfg.REPLAY.method_variant == 'None':
+            if 'REPLAY' in cfg and cfg.REPLAY.method == 'GMIR' and cfg.REPLAY.method_variant == 'None':
                 grad_list = glob.glob(str(output_dir / '*model_param_grad_*.npy'))
                 if len(grad_list) > 0:
                     grad_list.sort(key=os.path.getmtime)

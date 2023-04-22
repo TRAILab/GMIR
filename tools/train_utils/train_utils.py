@@ -374,7 +374,7 @@ def train_model(cfg, model, optimizer, train_loader, model_func, lr_scheduler, o
                             with open(fn, 'wb') as f:
                                 np.save(f, clear_indices_selected)
 
-                    elif cfg.REPLAY.method == 'EMIR':
+                    elif cfg.REPLAY.method == 'GMIR':
                         models_current_grad = {}
 
                         if cfg.REPLAY.method_variant == 'plus':
@@ -505,8 +505,8 @@ def train_model(cfg, model, optimizer, train_loader, model_func, lr_scheduler, o
                 wandb_utils.log(cfg, wb_dict, accumulated_iter)
                 #print(f'EPOCH {cur_epoch} time: {epoch_time.val} sec\n')
 
-                # save model param grads for EMIR variant None since it depends on grad from last iteration
-                if 'REPLAY' in cfg and cfg.REPLAY.method == 'EMIR' and cfg.REPLAY.method_variant  == 'None':
+                # save model param grads for GMIR variant None since it depends on grad from last iteration
+                if 'REPLAY' in cfg and cfg.REPLAY.method == 'GMIR' and cfg.REPLAY.method_variant  == 'None':
                     if cur_epoch > 0 and (cur_epoch+1) % cfg.REPLAY.epoch_interval == 0:
                         model_param_grads = []
                         for p in model.parameters():
