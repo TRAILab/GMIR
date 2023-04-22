@@ -28,12 +28,12 @@ We would like to thank the authors of [`OpenPCDet`](https://github.com/open-mmla
 ## Citation
 If you find this project useful in your research, please consider citing:
 ```
-@article{GMIR,
-    title={Point Density-Aware Voxels for LiDAR 3D Object Detection},
+@inproceedings{GMIR,
+    title={{Gradient-based Maximally Interfered Retrieval for Domain Adaptive 3D Object Detection}},
     author={Nisar, Barza and
             Annand, Vishal Kanna and
             Waslander, Steven L.},
-    journal={CRV},
+    booktitle={Conference on Computer and Robot Vision (CRV)},
     year={2023}
 }
 ```
