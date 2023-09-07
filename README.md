@@ -8,7 +8,7 @@ This repository is based off [`[OpenPCDet]`](https://github.com/open-mmlab/OpenP
 **Gradient-based Maximally Interfered Retrieval for Domain Adaptive 3D Object
 Detection**\
 Barza Nisar, Vishal Kanna Anand, Steven L. Waslander\
-**[[Paper]]()**
+**[[Paper]](https://arxiv.org/pdf/2304.14460.pdf)**
 
 ![GMIR diagram](docs/gmir.png)
 
